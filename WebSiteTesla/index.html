@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+    *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "Josefin";
+        }
+        header {
+        
+         height: 600px;
+         background-image: linear-gradient(rgba(255, 255, 255, 0.345),rgba(255, 255, 255, 0.071),rgba(255, 255, 255, 0.148)),url("/images/tesla-background4.jpg");
+
+         
+         background-repeat: no-repeat;
+         background-position: 0px -73px;
+         background-size: 100%;
+        }
+        .top-block {
+      /* background-color: rgb(0, 0, 0); */
+      color: white;
+      padding: 8px 20px;
+      position: relative;
+      height: 70px;
+    }
+    .hero-logo {
+      background-image: url("/images/Logo-Tesla-removebg-preview.png");
+      height: 58px;
+      /* border: 2px solid white; */
+      display: inline-block;
+      width: 139px;
+      margin-top: -5px;
+      margin-left: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: fixed;
+    }
+
+    nav {
+      display: inline-block;
+      /* background-color: rgb(112, 1, 1); */
+      position: fixed;
+      top: 25px;
+      left: 240px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+        color: #171a20;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      font-weight: 610;
+     
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(23, 22, 22);
+      font-size: 16px;
+      padding: 20px;
+      font-weight: 500;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+      
+    }
+    nav ul li a:hover{
+        background-color: rgba(216, 219, 222, 0.231);
+       
+         border-radius: 16px; 
+        
+    }
+    .side ul{
+      color: rgb(19, 18, 18);
+      
+      font-size: 20px;
+      position: absolute;
+      right: -340px;
+      top: -3px;
+      font-weight: 400;
+      display: inline-block;
+      
+    }
+    .side ul li {
+        color: black;
+      display: inline-block;
+      margin-left: 15px;
+    }
+    .side ul li a{
+        color: black;
+    }
+    .hero-heading{
+      position: absolute;
+      top: 89px;
+      left: 491px;
+      text-align: center;
+      position: fixed;
+    }
+    .hero-heading article h2{
+      font-size: 48px;
+      color: #171a20;
+      margin-bottom: 10px;
+    }
+    .hero-heading article p{
+      color: #171a20;
+      font-size: 20px;
+    }
+    .hero-heading article p a{
+      text-decoration: none;
+      color: #171a20;
+      border-bottom: 1px solid black;
+    }
+    .hero-heading article p a:hover{
+    border-width: 1.5px;
+    }
+    .buttons{
+      position: absolute;
+      top: 420px;
+      left: 370px;
+      position: fixed;
+    }
+    .buttons article button{
+      padding: 10px 0px;
+      border-radius: 6px;
+      border: none;
+      margin-left: 10px;
+    }
+    .buttons article button a{
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 29px;
+      font-size: 10px;
+      padding: 10px 100px;
+    }
+    .buttons article button:first-of-type{
+      background-color: #171a20;
+      margin-left: 10px;
+    }
+    .buttons article button:last-of-type{
+    background-color: rgb(170, 176, 182);
+    }
+    .image2{
+      background-color: antiquewhite;
+      height: 600px;
+      
+      background-image: linear-gradient(rgba(255, 255, 255, 0.345),rgba(255, 255, 255, 0.071),rgba(255, 255, 255, 0.148)),url("/images/tesla-background2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0px -73px;
+    }
+    .image3{
+      background-color: antiquewhite;
+      height: 600px;
+      
+      background-image: linear-gradient(rgba(255, 255, 255, 0.345),rgba(255, 255, 255, 0.071),rgba(255, 255, 255, 0.148)),url("/images/tesla-background3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0px -83px;
+    }
+    .image4{
+      background-color: antiquewhite;
+      height: 600px;
+      background-image:linear-gradient(to left, rgba(0, 0, 0, 0.023), rgba(0, 0, 0, 0.05)),
+         url("/images/486517.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .arrowAnimation{
+      height: 31px;
+      width: 30px;
+      position: absolute;
+      /* background-color: antiquewhite; */
+      background-image:url(/images/downArrow.png);
+      background-size: cover;
+      /* background-position: 0px 10px; */
+      bottom: 7px;
+      left: 640px;
+      position: fixed;
+      animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+
+    }
+     @keyframes bounce { 
+            0%{
+                bottom: 5px;
+                
+            }
+           
+            50%{
+                
+                bottom: 20px;
+            }
+            100%{
+                
+                bottom: 5px;
+            }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <section class="top-block">
+            <div class="hero-logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.tesla.com/models">Model S</a></li>
+                    <li><a href="https://www.tesla.com/model3">Model 3</a></li>
+                    <li><a href="https://www.tesla.com/modelX">Model X</a></li>
+                    <li><a href="https://www.tesla.com/modelY">Model Y</a></li>
+                    <li><a href="https://www.tesla.com/solarroof">Solar Roof</a></li>
+                    <li><a href="https://www.tesla.com/solarpanels">Solar Pannels</a></li>
+                    
+                </ul>
+                <div class="side">
+                    <ul>
+                      <li><a href="https://shop.tesla.com/"> Shop</a></li>
+                      <li><a href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email%20phone&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US"> Account</a></li>
+                      <li><a href=""> Menu</a></li>
+                    </ul>
+                  </div>
+        </nav>
+        <section class="hero-heading">
+          <article>
+            <h2>Model 3</h2>
+            <p>Order Online for <a href=""> TouchLess Delivery</a></p>
+          </article>
+        </section>
+        <section class="buttons">
+          <article>
+            <button><a href="">Custom Order</a></button>
+            
+            <button><a href="">Existing Inventory</a></button>
+          </article>
+        </section>
+    </header>
+    <section class="image2"></section>
+    <section class="image3"></section>
+    <section class="image4"></section>
+
+
+    <div class="arrowAnimation">
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
